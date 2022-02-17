@@ -1,0 +1,302 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background-color: #510000;
+  color: #ffa5a5;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Paragraphs */
+p {
+  padding: 1%;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/* All headers */
+header {
+  padding: 1%;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  margin: 1%;
+}
+
+h2 {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+/* mainHeader class */
+.mainHeader h1 {
+  font-size: 3em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+.mainHeader a {
+  text-decoration: none;
+}
+
+.mainHeader a:link {
+  color: #ffa5a5;
+}
+
+.mainHeader a:visited {
+  color: #ffa5a5;
+}
+
+.mainHeader a:hover {
+  color: #ffa5a5;
+}
+
+.mainHeader a:active {
+  color: #ffa5a5;
+}
+
+/* img */
+img {
+  width: 50%;
+  height: 50%;
+}
+
+/* All <nav> */
+nav {
+  background-color: #ff7676;
+  text-transform: uppercase;
+  font-size: 2em;
+  /* "Centers" text */
+  display: flex;
+  justify-content: center;
+}
+
+nav a:link {
+  color: #510000;
+  padding: 1% 2%;
+  /* Removes link underline */
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #740000;
+}
+
+nav a:hover {
+  color: #ffa5a5;
+  background-color: #740000;
+}
+
+nav a.active {
+  color: #ffa5a5;
+  background-color: #740000;
+}
+
+/* All other <a> links */
+a {
+  font-size: 24px;
+  transition: all .5s;
+}
+
+a:link {
+  color: #ffa5a5;
+}
+
+a:visited {
+  color: #ffa5a5;
+}
+
+a:hover {
+  color: #e39d07;
+}
+
+a:active {
+  color: #ffffff;
+}
+
+/* indexText */
+.indexText {
+  /* "Centers" text */
+  display: flex;
+  justify-content: center;
+  padding: 2% 12%;
+  font-size: 6em;
+}
+
+/* About */
+/* Code from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+video.aboutVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+.aboutText {
+  font-size: 4em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutDescription {
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 90%);
+  border: 1px solid #b2ccf7;
+  margin: 2% 11%;
+  /* font-size: 2em; */
+  line-height: 2;
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+  padding: 2% 1% .5% 1%;
+  font-size: 7em;
+  font-weight: 900;
+}
+
+.aboutSubtitle {
+  display: flex;
+  justify-content: center;
+  padding: .5% 2% 2% 2%;
+  font-size: 5em;
+}
+
+.aboutFigure {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutFigure img {
+  width: 25%;
+  height: 25%;
+}
+
+/* Prompt 1 */
+.prompt1Title {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  font-size: 5em;
+}
+
+.prompt1Description {
+  padding: 1% 3%;
+  background-color: rgba(0, 0, 0, 75%);
+  border: 1px solid #ffa5a5;
+  margin: 5% 15%;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.prompt1Figure {
+  display: flex;
+  justify-content: center;
+}
+
+.prompt1Body {
+  background: url("../images/PrismBG4.png");
+  background-size: 325%;
+}
+
+.prompt1Header {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+  border-bottom: 5px solid #ffa5a5;
+}
+
+ul.prompt1Bullets {
+  list-style-type: disc;
+  font-size: 2em;
+  padding-left: 4%;
+}
+
+ol.prompt1Numbers {
+  list-style-type: decimal;
+  font-size: 2em;
+  padding-left: 4%;
+}
+
+/* Prompt 2 */
+.prompt2Body {
+  background: url("../images/Prompt2BG.png");
+  background-size: 175%;
+  background-position-x: 50%;
+}
+
+/* Prompt 3 */
+.prompt3GIF {
+  display: block;
+  justify-content: center;
+  padding: 0 20%;
+}
+
+.prompt3GIF figure {
+  background-color: rgba(0, 0, 0, 90%);
+  border: 1px solid #b2ccf7;
+  padding: 3%;
+}
+
+.prompt3GIF img {
+  width: auto;
+  height: auto;
+  transform: translateX(30%);
+}
+
+.prompt3GIF figcaption {
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+  margin-top: 1%;
+}
+
+.prompt3Body {
+  background: url("../images/Prompt3BG.png");
+  background-size: 175%;
+  background-position-x: 50%;
+}
+
+/* Code from CART 211 2020 Week 9 examples */
+/* Scrolling over the article contents reveals itself */
+.prompt3Article {
+  opacity: 0;
+   transform: translateY(2%);
+   transition: opacity .5s .5s ease-out,
+     transform 1s .5s ease-out;
+   will-change: transform, opacity;
+}
+
+.prompt3Article.is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.extraPadding {
+  padding: 2em 0;
+}
