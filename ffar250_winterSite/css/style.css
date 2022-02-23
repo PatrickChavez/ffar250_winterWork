@@ -259,14 +259,14 @@ ol.prompt1Numbers {
 
 .prompt3GIF figure {
   background-color: rgba(0, 0, 0, 90%);
-  border: 1px solid #b2ccf7;
+  border: 1px solid #ffa5a5;
   padding: 3%;
 }
 
 .prompt3GIF img {
   width: auto;
   height: auto;
-  transform: translateX(30%);
+  transform: translateX(130%);
 }
 
 .prompt3GIF figcaption {
