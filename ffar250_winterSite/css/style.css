@@ -166,7 +166,7 @@ video.aboutVideo {
 .aboutDescription {
   padding: 2%;
   background-color: rgba(0, 0, 0, 90%);
-  border: 1px solid #b2ccf7;
+  border: 1px solid #ffa5a5;
   margin: 2% 11%;
   /* font-size: 2em; */
   line-height: 2;
@@ -184,7 +184,8 @@ video.aboutVideo {
   display: flex;
   justify-content: center;
   padding: .5% 2% 2% 2%;
-  font-size: 5em;
+  font-size: 4em;
+  margin-top: 2%;
 }
 
 .aboutFigure {
