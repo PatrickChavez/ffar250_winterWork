@@ -1,0 +1,685 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Mouse */
+  cursor: url("../assets/images/SpearMouse2.png"), default;
+}
+
+/* Loading fonts */
+@font-face {
+  font-family: "Alagard";
+  src:url("../assets/fonts/alagard.ttf");
+}
+
+@font-face {
+  font-family: "GothicPixels";
+  src:url("../assets/fonts/GothicPixels.ttf");
+}
+
+@font-face {
+  font-family: "PxSansNouveaux";
+  src: url("../assets/fonts/px_sans_nouveaux.ttf");
+}
+
+/* Body */
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 32px;
+  color: white;
+  font-family: "PxSansNouveaux";
+}
+
+/* Links */
+a {
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #ffebb5;
+}
+
+a:active {
+  color: white;
+}
+
+
+/* All img */
+
+img {
+  margin: 5% auto;
+  z-index: 2;
+}
+
+/* The navigation bar */
+/* Code based on CART 211 Week 9 exercises */
+/* The index icon */
+.indexIcon img {
+  margin: 1%;
+  width: 2em;
+  height: auto;
+  position: fixed;
+  z-index: 9;
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+}
+
+.mainNavigation {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 92;
+}
+
+.navigationContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.mainNavigation a {
+  position: relative;
+  padding: 2%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Alagard";
+  font-size: 4em;
+  text-align: left;
+  border: 5px solid white;
+  color: white;
+  flex: 1 100%;
+  transition: all 0.5s;
+}
+
+.mainNavigation a:hover {
+  background: white;
+  color: black;
+}
+
+.cancelButton {
+  position: absolute;
+  z-index: 98;
+  top: 2%;
+  left: 87%;
+  width: 10%;
+  height: auto;
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+  padding: .5%;
+  transition: all 0.3s;
+}
+
+.hamburgerIcon {
+  position: fixed;
+  z-index: 8;
+  right: 2%;
+  margin: 1%;
+  width: 4%;
+  height: auto;
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+  transition: all 0.3s;
+}
+
+/* To Top Button */
+/* Tutorial from W3Schools */
+/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+.toTopIcon {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  width: 3%;
+  height: auto;
+  z-index: 90;
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+  transition: all 0.3s;
+}
+
+/* Hover Bob code from Ian Lunn */
+/* https://ianlunn.github.io/Hover/ */
+.indexIcon img:hover, .indexIcon img:focus, .indexIcon img:active,
+.cancelButton:hover, .cancelButton:focus, .cancelButton:active,
+.hamburgerIcon:hover, .hamburgerIcon:focus, .hamburgerIcon:active,
+.toTopIcon:hover, .toTopIcon:focus, .toTopIcon:active{
+    animation-name: hvr-bob-float, hvr-bob;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+}
+
+/* Textboxes */
+.textBox {
+  /* Look */
+  background-color: black;
+  border: white;
+  border-style: double;
+  border-width: 12px;
+  font-family: "PxSansNouveaux";
+  color: white;
+  /* Position */
+  padding: 2%;
+  margin: 5% 15%;
+  /* Flex Display */
+  display: flex;
+  justify-content: space-around;
+  /* Text */
+  font-size: 24px;
+  /* Z-Index */
+  z-index: 2;
+}
+
+.textBox img {
+  /* Position */
+  display: block;
+  margin-right: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* Border */
+  border: #c8d0f7;
+  border-style: double;
+  border-width: 10px;
+}
+
+.textBox p {
+  margin: auto;
+  width: 50%;
+}
+
+/* Narration */
+.narrationBlack {
+  color: black;
+  font-family: "Alagard";
+  padding: 2%;
+  margin: 2% 10%;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.narrationWhite {
+  color: white;
+  font-family: "Alagard";
+  padding: 2%;
+  margin: 2% 10%;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.demonText {
+  color: #ff2121;
+  font-family: "GothicPixels";
+  padding: 2%;
+  margin: 2% 10%;
+  font-size: 1.5em;
+  text-align: center;
+  /* Animation from Animista */
+  /* http://animista.net */
+  animation: vibrate-3 0.5s infinite both;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.navigationButtons a {
+  font-family: "Alagard";
+  font-size: 2em;
+}
+
+/* Bubbles based on ZURB */
+/* https://zurb.com/playground/css-boxshadow-experiments */
+.bubbleGroup {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bubbleForm {
+  width: 150px;
+  height: 150px;
+  background: #a5c2cf;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: #ccdce3;
+  border-style: solid;
+  border-width: 2px;
+  animation-name: bubbleFloat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bubble1 {
+  top: 100%; left: 15%;
+  animation-duration: 25s;
+}
+
+.bubble2 {
+  top: 75%; left: 22%;
+  animation-duration: 20s;
+}
+
+.bubble3 {
+  top: 90%; left: 58%;
+  animation-duration: 27s;
+}
+
+.bubble4 {
+  top: 60%; left: 75%;
+  animation-duration: 22s;
+}
+
+.bubble5 {
+  top: 80%; left: 85%;
+  animation-duration: 18s;
+}
+
+/* Index */
+.indexBody {
+  background-color: black;
+}
+
+
+
+/* Story Pictures */
+.storyPicture {
+
+}
+
+/* Story Pages */
+.storyPage {
+  height: 100%;
+  width: auto;
+  font-family: "Alagard";
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Testing */
+
+.gradientArea {
+  background: linear-gradient(cornflowerblue, lightpink);
+  height: 350px;
+  width: auto;
+  z-index: -5;
+}
+
+
+/* Box Shadows */
+.indexIcon img, .hamburgerIcon, .storyPicture, .toTopIcon {
+  box-shadow: 11px 9px 3px 0px #1A2228;
+}
+
+/* Index */
+.indexBody img {
+  display: flex;
+  justify-content: center;
+}
+
+/* Intro 1 */
+.peachSide {
+  background: #ffbd8a;
+}
+
+.darkBlueSide {
+  background: #00031f;
+}
+
+.gradientPeachBlue {
+  background: linear-gradient(#ffbd8a, #00031f);
+  height: 800px;
+  width: auto;
+  z-index: -5;
+}
+
+/* Hub Webpage */
+/* <!-- Code from W3Schools -->
+<!-- https://www.w3schools.com/howto/howto_css_fullscreen_video.asp --> */
+.hauntedVideo {
+  position: fixed;
+  z-index: -3;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* All Objects */
+.demonBird img, .demonFrog img, .demonOx img, .phoneIcon img {
+  z-index: 3;
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+}
+
+.darkRedSide {
+  background: #120000;
+}
+
+/* Demon 1 */
+.demonBird {
+  /* Position */
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  /* Animation */
+  animation-name: demon1Animation;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Demon 2 */
+.demonFrog {
+  /* Position */
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  /* Animation */
+  animation-name: demon2Animation;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Demon 3 */
+.demonOx {
+  /* Position */
+  position: fixed;
+  top: 80%;
+  right: 20%;
+  /* Animation */
+  animation-name: demon3Animation;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Bird Demon Section */
+.brownSide {
+  background: #4d1700;
+}
+
+/* Frog Demon Section */
+.yellowSide {
+  background: #ede6a8;
+}
+
+.gradientYellowPink {
+  background: linear-gradient(#ede6a8, #eda8bd);
+  height: 800px;
+  width: auto;
+  z-index: -5;
+}
+
+.pinkSide {
+  background: #eda8bd;
+}
+
+/* Phone Icon */
+.phoneIcon {
+  position: fixed;
+  top: 20%;
+  right: 23%;
+  opacity: 0.7;
+}
+
+.phoneIcon img:hover {
+  /* Animation from Animista */
+  /* http://animista.net */
+	animation: pulsate-fwd 1.5s ease-in-out infinite both;
+}
+
+/* Phone Webpage */
+.inputSection {
+  display: block;
+  text-align: center;
+}
+
+.textInput {
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+  background-color: #080e2b;
+  border: #c8d0f7;
+  border-style: double;
+  border-width: 12px;
+  color: #c8d0f7;
+  font-family: "Alagard";
+  transition: all .5s;
+  font-size: 1.5em;
+}
+
+.inputButton {
+  padding: 3%;
+  margin: 3%;
+  font-size: 1.5em;
+  cursor: url("../assets/images/SpearMouseLight.png"), pointer;
+  background-color: #080e2b;
+  border: #c8d0f7;
+  border-style: double;
+  border-width: 12px;
+  color: #c8d0f7;
+  font-family: "Alagard";
+  transition: all .5s;
+}
+
+.inputButton:hover {
+  color: #ffebb5;
+}
+
+.inputButton:active {
+  color: #ffebb5;
+  background-color: #212a54;
+}
+
+.phoneBody {
+  background: #17245c;
+}
+
+/* Animations */
+
+/* Hover Bob code from Ian Lunn */
+/* https://ianlunn.github.io/Hover/ */
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Bubbles based on ZURB */
+/* https://zurb.com/playground/css-boxshadow-experiments */
+@keyframes bubbleFloat {
+  from {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-3000%);
+  }
+}
+
+/* Demon 1 Animation */
+@keyframes demon1Animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.7;
+    transform: translate(-1000%, 130%) rotate(45deg);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate(-265%, -245%) rotate(90deg);
+  }
+
+  75% {
+    opacity: 0.7;
+    transform: translate(1000%, 30%) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(250%, 150%) rotate(0deg);
+  }
+}
+
+/* Demon 2 Animation */
+@keyframes demon2Animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.7;
+    transform: translate(1000%, 500%) rotate(45deg);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate(2000%, -500%) rotate(-45deg);
+  }
+
+  75% {
+    opacity: 0.7;
+    transform: translate(3000%, 500%) rotate(45deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(4000%, -500%) rotate(-45deg);
+  }
+}
+
+/* Demon 3 Animation */
+@keyframes demon3Animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.7;
+    transform: translateX(300%) rotate(180deg);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate(-300%,-1000%) rotate(360deg);
+  }
+
+  75% {
+    opacity: 0.7;
+    transform: translateX(300%) rotate(-180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-300%) rotate(-360deg);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-3-26 21:47:21
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+ @keyframes pulsate-fwd {
+  0% {
+            transform: scale(1);
+  }
+  50% {
+            transform: scale(1.1);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-3-28 18:9:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+ @keyframes vibrate-3 {
+  0% {
+            transform: translate(0);
+  }
+  10% {
+            transform: translate(-2px, -2px);
+  }
+  20% {
+            transform: translate(2px, -2px);
+  }
+  30% {
+            transform: translate(-2px, 2px);
+  }
+  40% {
+            transform: translate(2px, 2px);
+  }
+  50% {
+            transform: translate(-2px, -2px);
+  }
+  60% {
+            transform: translate(2px, -2px);
+  }
+  70% {
+            transform: translate(-2px, 2px);
+  }
+  80% {
+            transform: translate(-2px, -2px);
+  }
+  90% {
+            transform: translate(2px, -2px);
+  }
+  100% {
+            transform: translate(0);
+  }
+}
