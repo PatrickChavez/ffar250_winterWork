@@ -356,11 +356,11 @@ img {
 }
 
 .darkBlueSide {
-  background: #00031f;
+  background: #1C2D6D;
 }
 
 .gradientPeachBlue {
-  background: linear-gradient(#ffbd8a, #00031f);
+  background: linear-gradient(#ffbd8a, #1C2D6D);
   height: 800px;
   width: auto;
   z-index: -5;
@@ -432,23 +432,23 @@ img {
 
 /* Bird Demon Section */
 .brownSide {
-  background: #4d1700;
+  background: #8F3C27;
 }
 
 /* Frog Demon Section */
 .yellowSide {
-  background: #ede6a8;
+  background: #FEF4BB;
 }
 
 .gradientYellowPink {
-  background: linear-gradient(#ede6a8, #eda8bd);
+  background: linear-gradient(#FEF4BB, #F3C1C2);
   height: 800px;
   width: auto;
   z-index: -5;
 }
 
 .pinkSide {
-  background: #eda8bd;
+  background: #F3C1C2;
 }
 
 /* Phone Icon */
