@@ -12,17 +12,18 @@ checkInputButton.onclick = function() {
 // inputFunction
 //
 // Changes the webpage depending on the number typed, as well as a message change
+// Based on CART 211 Exercises
 
 function inputFunction() {
   // Adding the text entry variable
   numberEntry = document.querySelector(".textInput").value;
   // Entering the correct number will change the webpage
-  if (numberEntry === "1234567890") {
+  if (numberEntry === "418-555-0032") {
     message.textContent = "It worked!";
     location.href = "ending01.html";
   }
   // Alternate entry
-  else if (numberEntry === "123-456-7890") {
+  else if (numberEntry === "4185550032") {
     message.textContent = "It worked!";
     location.href = "ending01.html";
   }
