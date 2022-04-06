@@ -30,6 +30,6 @@ function inputFunction() {
 
   // A simple message will be displayed if none of the above are typed in
   else {
-    message.textContent = "Nothing's happening!?";
+    message.textContent = "Nothing's happening...";
   }
 }
